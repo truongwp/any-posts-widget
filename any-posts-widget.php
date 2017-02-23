@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Any Posts Widget
- * Plugin URI: https://truongwp.com/plugins/any-posts-widget/
+ * Plugin URI: https://wordpress.org/plugins/any-posts-widget/
  * Description: Provides a widget allow choosing posts to display easily.
  * Author: Truong Giang
  * Author URI: https://truongwp.com/
