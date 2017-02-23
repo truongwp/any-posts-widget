@@ -3,7 +3,7 @@
  * Plugin Name: Any Posts Widget
  * Plugin URI: https://truongwp.com/plugins/any-posts-widget/
  * Description: Provides a widget allow choosing posts to display easily.
- * Author: Truong Giang (Truongwp)
+ * Author: Truong Giang
  * Author URI: https://truongwp.com/
  * Version: 1.0.0
  * License: GPL2
