@@ -49,7 +49,7 @@ Template files can be found within the `templates/` directory. Copy any template
 == Screenshots ==
 
 1. Widget options
-2. Example with Twenty Seventeen theme
+2. Example with Twenty Sixteen theme
 
 == Changelog ==
 
