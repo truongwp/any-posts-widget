@@ -5,7 +5,7 @@
  * Description: Provides a widget allow choosing posts to display easily.
  * Author: Truong Giang
  * Author URI: https://truongwp.com/
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: any-posts-widget
@@ -39,7 +39,7 @@ if ( defined( 'ANY_POSTS_WIDGET_VERSION' ) ) {
 	return;
 }
 
-define( 'ANY_POSTS_WIDGET_VERSION', '1.0.0' );
+define( 'ANY_POSTS_WIDGET_VERSION', '1.0.1' );
 define( 'ANY_POSTS_WIDGET_FILE', __FILE__ );
 define( 'ANY_POSTS_WIDGET_PATH', plugin_dir_path( ANY_POSTS_WIDGET_FILE ) );
 define( 'ANY_POSTS_WIDGET_URL', plugin_dir_url( ANY_POSTS_WIDGET_FILE ) );

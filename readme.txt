@@ -1,9 +1,9 @@
 === Any Posts Widget ===
 Contributors: truongwp
-Tags: comments, spam
-Requires at least: 4.6
-Tested up to: 4.7
-Stable tag: 4.3
+Tags: posts, post, widgets, widget
+Requires at least: 4.0
+Tested up to: 4.7.2
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,10 +36,13 @@ See the [FAQ tab](https://wordpress.org/plugins/any-posts-widget/faq/) for docum
 
 = Filters =
 
-**apw_list_posts_open** *(string)*:
+- **apw_posts_widget_query_args** *(array)*:
+Allows changing the posts query arguments
+
+- **apw_list_posts_open** *(string)*:
 Allows changing the open tag of posts list.
 
-**apw_list_posts_close** *(string)*:
+- **apw_list_posts_close** *(string)*:
 Allows changing the close tag of posts list.
 
 = Template =
@@ -52,6 +55,13 @@ Template files can be found within the `templates/` directory. Copy any template
 2. Example with Twenty Sixteen theme
 
 == Changelog ==
+
+= 1.0.1
+
+* Added: Remove post button.
+* Added: apw_posts_widget_query_args filter hook.
+* Improved: Auto focus on post select field when add post.
+* Fixed: Wrong posts order.
 
 = 1.0.0 =
 
