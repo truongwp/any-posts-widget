@@ -14,12 +14,22 @@
 					elPostName = elPosts.attr('data-select-post-name');
 
 				elPosts.append( tplSelectPost({ name: elPostName }) );
+				elPosts.find('li:last-child select').focus();
+			});
+		};
+
+		this.initRemoveBtn = function() {
+			$(document).on('click', '.js-apw-widget-settings-remove-btn', function(e) {
+				e.preventDefault();
+
+				$(this).closest('li').remove();
 			});
 		};
 
 		this.init = function() {
 			this.initSortable();
 			this.initAddBtn();
+			this.initRemoveBtn();
 		};
 
 		this.init();

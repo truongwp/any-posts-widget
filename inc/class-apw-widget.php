@@ -43,6 +43,7 @@ class APW_Widget extends WP_Widget {
 			$query = new WP_Query( array(
 				'nopaging'            => true,
 				'post__in'            => $instance['posts'],
+				'orderby'             => 'post__in',
 				'ignore_sticky_posts' => true,
 			) );
 
@@ -95,7 +96,7 @@ class APW_Widget extends WP_Widget {
 			<ul class="js-apw-widget-settings-posts apw-widget-settings-posts" data-select-post-name="<?php echo esc_attr( $select_post_name ); ?>">
 				<?php foreach ( $post_ids as $post_id ) : ?>
 					<li>
-						<span class="dashicons dashicons-move"></span>
+						<span class="icon-move dashicons dashicons-move"></span>
 
 						<select class="widefat" name="<?php echo esc_attr( $select_post_name ); ?>">
 							<?php
@@ -109,6 +110,10 @@ class APW_Widget extends WP_Widget {
 							}
 							?>
 						</select>
+
+						<a href="#" class="remove-btn js-apw-widget-settings-remove-btn">
+							<span class="dashicons dashicons-no-alt"></span>
+						</a>
 					</li>
 				<?php endforeach; ?>
 			</ul>
@@ -195,7 +200,8 @@ function apw_widget_backend_template() {
 	<script type="text/html" id="tmpl-apw-widget-select-post">
 
 		<li>
-			<span class="dashicons dashicons-move"></span>
+			<span class="icon-move dashicons dashicons-move"></span>
+
 			<select name="{{ data.name }}" class="widefat">
 				<?php
 				$posts = apw_get_posts_opt();
@@ -209,6 +215,10 @@ function apw_widget_backend_template() {
 				}
 				?>
 			</select>
+
+			<a href="#" class="remove-btn js-apw-widget-settings-remove-btn">
+				<span class="dashicons dashicons-no-alt"></span>
+			</a>
 		</li>
 
 	</script>
