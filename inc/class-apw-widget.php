@@ -40,12 +40,13 @@ class APW_Widget extends WP_Widget {
 		}
 
 		if ( ! empty( $instance['posts'] ) ) {
-			$query = new WP_Query( array(
+
+			$query = new WP_Query( apply_filters( 'apw_posts_widget_query_args', array(
 				'nopaging'            => true,
 				'post__in'            => $instance['posts'],
 				'orderby'             => 'post__in',
 				'ignore_sticky_posts' => true,
-			) );
+			), $instance, $args ) );
 
 			$template_file = ANY_POSTS_WIDGET_PATH . 'templates/loop.php';
 
